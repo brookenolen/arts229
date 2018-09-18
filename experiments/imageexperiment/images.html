@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <title>images experiment</title>
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700,900" rel="stylesheet">
+
+  <style>
+
+body {background-image: url(black-linen.png);
+      background-attachment: fixed;
+      background-color: #373737;
+      }
+
+      .backdrop {
+          background:             url("pumpkin_fall.jpg") center;
+          background-size:        100%;
+          margin-bottom: 50px;
+          max-width:              100%;
+      }
+
+      .text {
+          color:              white;
+          border:             4px solid;
+          background:         #373737;
+          mix-blend-mode:     multiply;
+          font:               bolder 12vw 'Poppins';
+          text-align:         center;
+          margin:             0;
+}
+
+
+.polygon {background: url("gourds.jpg") center;}
+
+.middle {background-color: black;
+      background: url("leaves.jpg") center;
+      }
+
+.right {background: url("sunflower.jpg") center;
+      }
+
+.band {
+  width: 33.3%;
+  height: 700px;
+  margin: 0;
+  background-size: cover;
+  -webkit-clip-path: inset(0 0% 0 0);
+  clip-path: inset(0 0% 0 0);
+  float:left;
+}
+
+
+
+
+  </style>
+</head>
+
+
+<body>
+
+
+    <div class="backdrop">
+  <p class="text">Autumn</p></div>
+
+
+<div class="polygon band"></div>
+<div class="middle band"></div>
+<div class="right band"></div>
+
+
+
+
+
+
+  </body>
+
+</html>
