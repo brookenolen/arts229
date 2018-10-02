@@ -11,8 +11,11 @@ section {background: purple; display: flex; margin: 50px;}
 
 div {background: darkseagreen; width: 100px; height: 100px;}
 
+.article {display: flex;}
+.sidebar {align-items: flex-center;}
+.footer  {justify-content: flex-end;}
+
 .flex-container1 {
-  padding: 50px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -23,10 +26,43 @@ div {background: darkseagreen; width: 100px; height: 100px;}
 .order1 {order: -1; flex-grow: 3;}
 
 .flex-container2 {
-  flex-direction: column;
-
+  padding: 50px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
 }
 
+.flex-container2 div {flex-basis: auto; flex-grow: 1;}
+.order1 {order: -1; flex-grow: 3;}
+
+.flex-container3 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.flex-container3 div {flex-basis: auto; flex-grow: 1;}
+.order1 {order: -1; flex-grow: 3;}
+
+
+.flex-container4 {
+  padding: 50px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+.flex-container4 div {flex-basis: auto; flex-grow: 1;}
+.order1 {order: -1; flex-grow: 3;}
+
+.flex-container5 {
+    padding: 300px;
+    background: purple;
+    display: flex;
+    justify-content: space-around;
+}
 
 
   </style>
@@ -59,7 +95,7 @@ div {background: darkseagreen; width: 100px; height: 100px;}
     <div>8</div>
   </section>
 
-  <section class="flex-container4">
+  <section class="flex-container3">
     <div>1</div>
     <div>2</div>
     <div>3</div>
@@ -82,17 +118,18 @@ div {background: darkseagreen; width: 100px; height: 100px;}
   </section>
 
   <section class="flex-container5">
-    <div>
-      <h2>title of main article</h2>
+    <div class="article"><h2>title of main article</h2></div>
+
       <p>paragraph text. put some filler content here. make this an article or something.</p>
       <p>paragraph text. put some filler content here. make this an article or something.</p>
     </div>
-    <div>
-      <h2>sidebar here</h2>
+    <div class="sidebar"><h2>sidebar here</h2></div>
+
       <p>paragraph text. put some filler content here. make this an article or something.</p>
     </div>
     <div>
-      <h2>footer stuff here</h2>
+      <div class="footer"><h2>footer stuff here</h2></div
+
       <p>paragraph text. put some filler content here. make this an article or something.</p>
     </div>
   </section>
