@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>animation graphic</title>
+
+  <style>
+
+#Brooke {
+          width: 100px;
+          height: 100px;
+          background: purple;
+          transition: transform 2s, background 2s;
+}
+ #Brooke:hover {
+   transform: rotate(180deg);
+   background: pink;
+   transition: transform .5s, background 4s;
+ }
+
+#box1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0% {background-color: red;
+  transform:scale(1);}
+  25% {background-color: yellow; transform:scale(1.5);}
+  50% {background-color: blue;}
+  100% {background-color: green; transform:scale(1);}
+}
+
+
+
+
+  </style>
+</head>
+
+<body>
+<div id="Brooke"><h2>Brooke</h2></div>
+
+
+<div id="box1"></div>
+
+</body>
+
+
+
+
+</html>
