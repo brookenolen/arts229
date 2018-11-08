@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exploration 3</title>
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700,900" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+
+	<link rel="stylesheet" href="https://demo.sirv.com/ebay/css-fadeshow.min.css">
+
+	<style>
+		html {
+			font-size: 100%;
+		}
+		body {
+			margin: 0;
+			font-family: 'Poppins', sans-serif;
+			background-color: #F4F4F4;
+			font-size: 1rem;
+		}
+		.container {
+			width: 100vw;
+			height:600px;
+			top: 0;
+			left: 0;
+      margin-top: 100px;
+		}
+		.slide-content {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			color: white;
+			text-align: center;
+			text-shadow: 0 0 20px rgba(0,0,0,0.5);
+			z-index: 1;
+			-webkit-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+		}
+		.slide-content p {
+			font-size: calc(1rem + 10 * (100vw - 375px)/ (1199 - 375));
+			font-weight: 100;
+			margin-top: 0;
+			margin-bottom: 0.5em;
+		}
+		h1,
+		h2 {
+			margin-top: 0;
+
+			font-size: calc(2rem + 28 * (100vw - 375px)/ (1199 - 375));
+			margin-bottom: 0.2em;
+			font-weight: bold;
+		}
+    h1:hover {
+      color: #D5F6D9;
+    }
+    p:hover {
+      color: #D5F6D9;
+    }
+
+		@media (min-width: 1200px) {
+			h1,
+			h2 {
+				font-size: 60px;
+			}
+			.slide-content p {
+				font-size: 26px;
+			}
+  }
+	</style>
+	<div class="container">
+		<div data-am-fadeshow="quick-nav prev-next-nav">
+
+			<!-- Radio -->
+			<input type="radio" name="css-fadeshow" id="slide-1" />
+			<input type="radio" name="css-fadeshow" id="slide-2" />
+			<input type="radio" name="css-fadeshow" id="slide-3" />
+			<input type="radio" name="css-fadeshow" id="slide-4" />
+			<input type="radio" name="css-fadeshow" id="slide-5" />
+
+			<!-- Slides -->
+			<div class="fs-slides">
+				<div class="fs-slide" style="background-image: url(../project_1/flower6.jpg);">
+					<!-- You can add content to slides (class names are not bound to CSS Fadeshow) -->
+					<div class="slide-content">
+						<h1>Make a statement at your special event</h1>
+						<p>Flowers create style!</p>
+					</div>
+				</div>
+				<div class="fs-slide" style="background-image: url(../project_1/flower15.jpg);">
+							<div class="slide-content">
+						<h1>Your guests will be impressed!</h1>
+						<p>It's the easiest way to create a fabulous event!</p>
+					</div>
+
+				</div>
+				<div class="fs-slide" style="background-image: url(../project_1/flower23.jpg);">
+				  					<div class="slide-content">
+						<h1>Showcase your style through flowers!</h1>
+						<p>Schedule a consultation today!</p>
+					</div>
+
+				</div>
+				<div class="fs-slide" style="background-image: url(../project_1/flower21.jpg);">
+				  					<div class="slide-content">
+						<h1>Flowers from around the world and local vendors!</h1>
+              <p>Brooke MaryLee Designs makes planning easy!</p>
+					</div>
+				</div>
+				<div class="fs-slide" style="background-image: url(../project_1/flower20.jpg);">
+				  				  					<div class="slide-content">
+						<h1>Your special event matters!</h1>
+              <p>Start planning floral arrangements today!</p>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Quick Navigation -->
+			<div class="fs-quick-nav">
+				<label class="fs-quick-btn" for="slide-1"></label>
+				<label class="fs-quick-btn" for="slide-2"></label>
+				<label class="fs-quick-btn" for="slide-3"></label>
+				<label class="fs-quick-btn" for="slide-4"></label>
+				<label class="fs-quick-btn" for="slide-5"></label>
+			</div>
+
+			<!-- Prev Navigation -->
+			<div class="fs-prev-nav">
+				<label class="fs-prev-btn" for="slide-1"></label>
+				<label class="fs-prev-btn" for="slide-2"></label>
+				<label class="fs-prev-btn" for="slide-3"></label>
+				<label class="fs-prev-btn" for="slide-4"></label>
+				<label class="fs-prev-btn" for="slide-5"></label>
+			</div>
+
+			<!-- Next Navigation -->
+			<div class="fs-next-nav">
+				<label class="fs-next-btn" for="slide-1"></label>
+				<label class="fs-next-btn" for="slide-2"></label>
+				<label class="fs-next-btn" for="slide-3"></label>
+				<label class="fs-next-btn" for="slide-4"></label>
+				<label class="fs-next-btn" for="slide-5"></label>
+			</div>
+
+			<!-- Slide Counter -->
+			<div class="fs-slide-counter">
+				<span class="fs-slide-counter-current"></span>/<span class="fs-slide-counter-total"></span>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+</body>
+
+</html>
