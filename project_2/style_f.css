@@ -43,6 +43,7 @@ body {
   border: 2px solid #1B4062;
   padding: 10px;
   background: white;
+  text-align: center;
 }
 
 .footer {
@@ -112,9 +113,6 @@ img {
 .fa-instagram {
                 color: #373737;
 }
-#icons {
-  align-items: center;
-}
 
 @media screen and (min-width: 1000px) {
   .container {
@@ -139,6 +137,7 @@ img {
   .aside {
     grid-column: 2 / 3;
     background: white;
+    text-align: center;
   }
 
   .footer {
@@ -169,8 +168,5 @@ img {
 }
 .fa-instagram {
                 color: #373737;
-}
-#icons {
-  display: inline;
 }
 }
