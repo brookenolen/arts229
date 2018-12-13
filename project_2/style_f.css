@@ -135,7 +135,6 @@ img {
   }
 
   .aside {
-    grid-column: 2 / 3;
     background: white;
     text-align: center;
   }
